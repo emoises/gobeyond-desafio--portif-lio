@@ -6,7 +6,7 @@ interface DataProps {
 
 interface DisciplinesProps{
     "title": string,
-    "icon": string,
+    // "icon": StaticImageData,
     "posts": PostProps[]
 }
 interface PostProps{

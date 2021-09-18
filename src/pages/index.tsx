@@ -3,11 +3,17 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import HeroHeader from './components/HeroHeader'
 import NavButtons from './components/NavButtons'
-import {data} from '../data/data'
-import { useState } from 'react'
+import {data} from '../../data/data'
+import { useEffect, useState } from 'react'
+import Posts from './components/Posts'
 
 const Home: NextPage = () => {
   const [apiData, setApiData] = useState(data)
+
+  const [index, setIndex] = useState(0)
+  useEffect(() => {
+    console.log(index)
+  }, [index])
 
   console.log(apiData)
   return (
@@ -19,7 +25,8 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <HeroHeader/>
-        <NavButtons apiData={apiData}/>
+        <NavButtons apiData={apiData} handleIndexState={setIndex} index={index}/>
+        <Posts index={index} apiData={apiData}/>
       </main>
     </div>
   )

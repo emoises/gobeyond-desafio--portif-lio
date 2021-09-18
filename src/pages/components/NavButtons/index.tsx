@@ -1,26 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import styles from '../../../styles/NavBar.module.css'
 interface NavBarProps{
   apiData: DataProps ;
+  handleIndexState: Dispatch<SetStateAction<number>>;
+  index: number
 }
-const NavButtons: React.FC<NavBarProps> = ({apiData}) => {
-  const [index, setIndex] = useState(0)
+const NavButtons: React.FC<NavBarProps> = ({apiData,handleIndexState,index}) => {
 
-  useEffect(() => {
-    console.log(index)
-  }, [index])
+ 
 
   return (
     <nav className={styles.nav}>
       {
         apiData.disciplines.map( (disciple, idx) => {
           return (
-            <button 
-            key={idx} 
-            className={index === idx ? styles.buttonActive :styles.button}
-            onClick={() => setIndex(idx)}
-            >{disciple.title}</button>
+            <>
+              <button  
+              key={idx} 
+              className={index === idx ? styles.buttonActive :styles.button}
+              onClick={() => handleIndexState(idx)}
+              >
+                <p>{disciple.title}</p></button>
+            </>
             )
         })
       }
