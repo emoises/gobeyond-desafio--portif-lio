@@ -1,0 +1,30 @@
+.nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(0deg, rgba(180,180,180,1),rgba(180,180,180,0.3));
+}
+.button{
+    border: none;
+    background-color: #a4a4a4;
+    min-width: 150px;
+    height: 40px;
+    border-radius: 10px 10px 0 0; 
+}
+.buttonActive{
+    width: 150px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px 10px 0 0; 
+    background-color: #333;
+}
+@media only screen and (max-width: 1007px) {
+    .nav{
+        width: calc(100vw - 20px);
+        overflow: hidden;
+        overflow-x: auto;
+    }
+  }
+@media only screen and (max-width: 640px) {
+
+  }
