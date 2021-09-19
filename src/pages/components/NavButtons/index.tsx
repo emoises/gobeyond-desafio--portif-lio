@@ -16,14 +16,12 @@ const NavButtons: React.FC<NavBarProps> = ({apiData,handleIndexState,index}) => 
       {
         apiData.disciplines.map( (disciple, idx) => {
           return (
-            <>
               <button  
               key={idx} 
               className={index === idx ? styles.buttonActive :styles.button}
               onClick={() => handleIndexState(idx)}
               >
                 <p>{disciple.title}</p></button>
-            </>
             )
         })
       }

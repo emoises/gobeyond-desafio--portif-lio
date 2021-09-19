@@ -1,9 +1,11 @@
 .nav{
-    width: fit-content;
+    width: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
-    background: #e1e1e1;
-    /* background: linear-gradient(0deg, rgba(180,180,180,1),rgba(180,180,180,0.3)); */
+    background: #c6c6c6;
+    border-radius: 10px;
+    scrollbar-width: 0;
 }
 .button{
     border: none;
@@ -35,14 +37,15 @@
 .icon{
     position: absolute;
     left: 0;
+    
 }
+
+
 @media only screen and (max-width: 1007px) {
     .nav{
-        width: calc(100vw - 20px);
-        overflow: hidden;
+        width: auto ;
+        margin-bottom: 50px;
+        /* overflow: hidden; */
         overflow-x: auto;
     }
-  }
-@media only screen and (max-width: 640px) {
-
   }

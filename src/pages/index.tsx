@@ -6,16 +6,15 @@ import NavButtons from './components/NavButtons'
 import {data} from '../../data/data'
 import { useEffect, useState } from 'react'
 import Posts from './components/Posts'
+import Contacts from './components/Contacts'
 
 const Home: NextPage = () => {
   const [apiData, setApiData] = useState(data)
 
   const [index, setIndex] = useState(0)
   useEffect(() => {
-    console.log(index)
-  }, [index])
-
-  console.log(apiData)
+    setApiData(data)
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
@@ -25,11 +24,20 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <HeroHeader/>
+        <Contacts/>
         <NavButtons apiData={apiData} handleIndexState={setIndex} index={index}/>
         <Posts index={index} apiData={apiData}/>
+    
       </main>
     </div>
   )
+}
+export const getStaticProps = (context: string) => {
+  console.log('env mensage', process.env.UNSPLASH_API_KEY)
+  return {
+    props:{ }
+}
+
 }
 
 export default Home

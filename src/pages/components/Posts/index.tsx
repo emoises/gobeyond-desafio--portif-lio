@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from '../../../styles/posts.module.css'
-import Link from 'next/link'
+
 interface PostsProps{
     apiData: DataProps ;
     index: number;
 }
+
 const Posts: React.FC<PostsProps> = ({apiData,index}) => {
   return (
       <section className={styles.section}>
@@ -21,6 +22,7 @@ const Posts: React.FC<PostsProps> = ({apiData,index}) => {
                         }}  >
                             <h3 className={styles.h3}>{post.title}</h3>
                         </a>
+                        <div className={styles.filter}></div>
                       </div>
                       
 
