@@ -45,7 +45,7 @@
     .nav{
         width: auto ;
         margin-bottom: 50px;
-        /* overflow: hidden; */
+        overflow: hidden;
         overflow-x: auto;
     }
   }
