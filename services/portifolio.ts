@@ -12,7 +12,7 @@ export const data = {
           link: "https://developer.amazon.com/en-US/docs/alexa/ask-overviews/what-is-the-alexa-skills-kit.html",
         },
         {
-          title: "💻 Porta de Developer da Alexa",
+          title: "💻 Portal de Developer da Alexa",
           imgUrl: "https://images.unsplash.com/photo-1615834593791-aa31b118afe0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
           link: "https://developer.amazon.com/en-US/alexa/",
         },

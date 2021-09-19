@@ -63,6 +63,7 @@
     bottom: 15px;
     margin: 5px;
     color: #fefefe;
+    font-size: 16px;
     z-index: 40;
 }
 @media (max-width: 1007px) {
@@ -73,6 +74,9 @@
 @media (max-width: 640px) {
     .section{
         padding-bottom: 90px;
-        grid-template-columns: repeat(1,1fr);
-    }    
+    }
+    .link{
+        height: 200px;
+    }
+    
 }
