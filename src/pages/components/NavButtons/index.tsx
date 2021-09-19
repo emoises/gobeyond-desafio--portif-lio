@@ -14,7 +14,7 @@ const NavButtons: React.FC<NavBarProps> = ({apiData,handleIndexState,index}) => 
   return (
     <nav className={styles.nav}>
       {
-        apiData.disciplines.map( (disciple, idx) => {
+        apiData?.disciplines.map( (disciple, idx) => {
           return (
               <button  
               key={idx} 
