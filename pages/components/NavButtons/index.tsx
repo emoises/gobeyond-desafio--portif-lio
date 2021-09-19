@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import styles from '../../../styles/NavBar.module.css'
+import styles from '../../../styles/navBar.module.css'
 interface NavBarProps{
   apiData: DataProps ;
   handleIndexState: Dispatch<SetStateAction<number>>;
