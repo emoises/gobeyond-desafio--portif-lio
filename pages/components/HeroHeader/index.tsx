@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
-import styles from '../../../styles/HeroHeader.module.css'
-import heroImg from '../../../../public/images/profile.jpg'
+import styles from '../../../styles/heroHeader.module.css'
+import heroImg from '../../../public/images/profile.jpg'
 const HeroHeader: React.FC = () => {
   
   return (
