@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faLinkedinIn, faGithubAlt, } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faLinkedinIn, faGithubAlt, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../../../styles/contacts.module.css";
 
@@ -24,6 +24,12 @@ const Contacts: React.FC = () => {
       >
         <FontAwesomeIcon className={styles.images} icon={faGithubAlt} color="#333" size={"2x"} />
         <span className={styles.span}>Github</span>
+      </a>
+      <a className={styles.links} href="https://www.instagram.com/automattizze/"
+      target="_blank" rel="noreferrer"
+      >
+        <FontAwesomeIcon className={styles.images} icon={faInstagram} color="#333" size={"2x"} />
+        <span className={styles.span}>Instagram</span>
       </a>
     </section>
   );
