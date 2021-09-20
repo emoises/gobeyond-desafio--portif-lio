@@ -131,6 +131,8 @@ Similar ao que foi feito com o NavBar os posts são renderizados com o método `
 Ainda utilizei um loading com HTML e CSS puro e o inseri em um componente.
 Abaixo segue o componente em sua totalidade.
 
+## Loading
+
 ```js
 import React from "react";
 import styles from "../../../styles/loading.module.css";
