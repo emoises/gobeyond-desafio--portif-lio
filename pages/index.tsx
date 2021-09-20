@@ -18,6 +18,7 @@ const Home: NextPage = () => {
     disciplines: [
       {
         title: '',
+        // icon: '',
         posts: [
           {
             title:'',
@@ -60,7 +61,7 @@ const Home: NextPage = () => {
   )
 }
 export const getStaticProps = (context: string) => {
-  console.log('env mensage', process.env.UNSPLASH_API_KEY)
+  // console.log('env mensage', process.env.UNSPLASH_API_KEY)
   return {
     props:{ }
 }

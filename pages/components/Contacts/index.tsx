@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faLinkedinIn, faGithubAlt, } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../../../styles/contacts.module.css";
 

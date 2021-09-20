@@ -1,10 +1,12 @@
+import { faAmazon, faReact, faApple, faGithub, faLinkedin , faGoogle, faGooglePlay} from "@fortawesome/free-brands-svg-icons";
+
 export const data = {
   owner: "Eduardo Moisés da Silva",
   version: "1.0",
   disciplines: [
     {
       title: "🤖 Alexa skill",
-      // icon: alexa,
+      // icon: faAmazon,
       posts: [
         {
           title: "📚 Documentação",
@@ -40,7 +42,7 @@ export const data = {
     },
     {
       title: "⚛️ React",
-      // icon: react,
+      // icon: faReact,
       posts: [
         {
           title: "📚 Instalação do node",
@@ -71,7 +73,7 @@ export const data = {
     },
     {
       title: "⌚ Fitbit",
-      // icon: fitbit,
+      // icon: faApple,
       posts: [
         {
           title: "📚 Portal de desenvolvedor da fitbit",
@@ -102,7 +104,7 @@ export const data = {
     },
     {
       title: "🌎 HTML Puro",
-      // icon: html5,
+      // icon: faGoogle,
       posts: [
         {
           title: "📚 Documentação de apoio",
