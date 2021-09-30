@@ -1,15 +1,15 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/home.module.css'
-import HeroHeader from './components/HeroHeader'
-import NavButtons from './components/NavButtons'
-import {data} from '../services/portifolio'
-import { useEffect, useState } from 'react'
-import Posts from './components/Posts'
-import Contacts from './components/Contacts'
-import Loading from './components/Loading/Loading'
+import { useEffect, useState } from 'react';
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
+import styles from '../styles/home.module.css';
 
+import {data} from '../services/portifolio';
+import HeroHeader from './components/HeroHeader';
+import NavButtons from './components/NavButtons';
+import Posts from './components/Posts';
+import Contacts from './components/Contacts';
+import Loading from './components/Loading/Loading';
 
 const Home: NextPage = () => {
   const [apiData, setApiData] = useState({
@@ -31,9 +31,11 @@ const Home: NextPage = () => {
   })
 
   const [index, setIndex] = useState(0)
+  
   useEffect(() => {
     setApiData(data)
   }, [])
+
   return (
     <div className={styles.container}>
       <Head>

@@ -20,12 +20,22 @@
     transition: .2;
 }
 .images:hover{
-    margin-top: -5px;
+    margin-top: -6px;
 }
 .span{
     font-size: 12px;
     font-weight: 600;
+    display: none;
 }
+.shadow{
+    width: 20px;
+    height: 20%;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 50%;
+    transition: .2s;
+}
+
+
 @media (max-width: 640px) {
     .container{
         width: 90%;
