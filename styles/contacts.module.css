@@ -33,11 +33,32 @@
     background-color: #333333;
     opacity: .95;
     border-radius: 50%;
-    transition: .9s;
+    transition: .9s ease-in-out;
 }
-@keyframes anime-icon0 {
-    0% {
-        width: 0%;
+
+.images:hover ~ .shadow{
+    animation-name: anime-icon-in;
+    animation-duration: .15s;
+}
+.images:not(:hover) ~.shadow{
+    animation-name: anime-icon-out;
+    animation-duration: .10s;
+
+}
+@keyframes anime-icon-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15px;
+    }
+}
+@keyframes anime-icon-out {
+    from {
+        width: 15px;
+    }
+    to {
+        width: 0;
     }
 }
 
